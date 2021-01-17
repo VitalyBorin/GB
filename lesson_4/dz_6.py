@@ -9,6 +9,7 @@ for el in count(int(i)):
     else:
         print(el)
 
+
 с = 0
 for el in cycle(my_list):
     if с > 10:
