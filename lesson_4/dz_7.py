@@ -1,27 +1,12 @@
-# fact = (param * param for param in range(5))
-#
-# for el in fact():
-#     print(el)
-
-def fact(n):
-    res = 1
-    for el in range(n):
-        res = res * (el + 1)
+def fact(a):
+    res = []
+    r = 1
+    for el1 in range(a):
+        r = r * (el1+1)
+        res.append(r)
     yield res
 
-g=fact()
-for el in g(n)
-    # print(fact(4))
-print(g())
-
-
-
-
-
-# def fact():
-#     i =
-#     yield el
-#
-#
-# for el in fact(n)
-#
+n = input('Введите число n, при котором нужно рассчитать ряд от 1! до n! ')
+n = int(n)
+for el in fact(n):
+    print (el)
